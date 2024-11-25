@@ -167,16 +167,22 @@ ActorRepo.get(
 
 ActorRepo.post(
   Paths.Actor.Add,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   ActorRoutes.add,
 );
 
 ActorRepo.put(
   Paths.Actor.Update,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   ActorRoutes.update,
 );
 
 ActorRepo.delete(
   Paths.Actor.Delete,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   ActorRoutes.delete,
 );
 
@@ -192,16 +198,22 @@ DirectorRepo.get(
 
 DirectorRepo.post(
   Paths.Director.Add,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   DirectorRoutes.add,
 );
 
 DirectorRepo.put(
   Paths.Director.Update,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   DirectorRoutes.update,
 );
 
 DirectorRepo.delete(
   Paths.Director.Delete,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   DirectorRoutes.delete,
 );
 
@@ -217,16 +229,22 @@ GeneroRepo.get(
 
 GeneroRepo.post(
   Paths.Genero.Add,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   GeneroRoutes.add,
 );
 
 GeneroRepo.put(
   Paths.Genero.Update,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   GeneroRoutes.update,
 );
 
 GeneroRepo.delete(
   Paths.Genero.Delete,
+  authenticateToken, // Verificación del token
+  checkUserRole,
   GeneroRoutes.delete,
 );
 

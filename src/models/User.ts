@@ -20,7 +20,20 @@ export interface IUser {
   
 }
 
+// **** Clase User **** //
+class User {
+  static new(nombre: string, email: string): IUser {
+    return {
+      nombre,
+      email,
+      contrasenia: '',
+      rol: false,
+      fechaNacimiento: new Date(),
+    };
+  }
+}
 
+export default User;
 
 
 
